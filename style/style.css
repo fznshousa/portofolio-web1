@@ -1,0 +1,444 @@
+:root {
+	/* --pmr: #0077cc; */
+	--pmr: #0d212e;
+	--link: #0098ca;
+	--white: #fbfbfb;
+	--white1: #f0f4f7;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	font-size: 1rem;
+	text-decoration: none;
+	color: #0d212e;
+	transition: color 0.3s ease;
+}
+
+nav a,
+#projects .listp a,
+#blog .blogitem a {
+	color: var(--link);
+}
+
+a:hover {
+	color: var(--link);
+	text-decoration: underline;
+}
+
+body {
+	font-family: "Poppins", "Arial", sans-serif;
+	background-color: var(--white1);
+	color: #333;
+	line-height: 1.6;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+p {
+	font-size: 1rem;
+}
+
+h2 {
+	color: var(--link);
+	margin-bottom: 0.5rem;
+}
+
+h3 {
+	color: var(--pmr);
+	margin-bottom: 0.5rem;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	margin: 7px 0;
+}
+
+section {
+	background-color: var(--white);
+	padding: 20px 20px 0;
+	border-radius: 7px 100px 7px 7px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+section p {
+	color: #666;
+}
+
+/* HEADER */
+header {
+	background-color: var(--pmr);
+	color: white;
+	text-align: center;
+	padding: 25px 40px;
+	border-radius: 0 0 6vw 6vw;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+	height: 5rem;
+}
+
+header .tagline {
+	font-size: 1rem;
+	font-style: italic;
+}
+
+/* NAVBAR */
+nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+nav ul {
+	display: flex;
+	gap: 10px;
+	list-style: none;
+}
+
+nav ul li a:hover {
+	color: var(--link);
+}
+
+main {
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 28px;
+	padding: 0 15%;
+}
+
+/* ABOUT Section */
+#about h2 {
+	margin: 0.5rem 1rem;
+}
+
+#about .abtcont {
+	display: grid;
+	grid-template-columns: 120px auto;
+}
+
+#about img {
+	width: 120px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 15px;
+	align-self: center;
+	margin: 0 20px;
+}
+
+#about .sdee {
+	margin-top: 1rem;
+	padding: 0 40px 1rem;
+	color: #0d212e;
+}
+
+#about .sdee p {
+	font-size: 1.1rem;
+}
+
+/* WORK Section */
+#work {
+	padding-bottom: 0;
+}
+
+#work .job {
+	padding-bottom: 20px;
+}
+
+/* PROJECT Section */
+/* #projects {
+	background-color: #ce2424;
+} */
+
+#projects .project .listp img {
+	width: 90%;
+	align-items: center;
+	margin-left: 5%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#projects .project {
+	/* background-color: #c3d822; */
+	background-color: var(--pmr);
+	padding-top: 20px;
+	border-radius: 7px 65px 7px 7px;
+}
+
+#projects .project h3 {
+	margin-bottom: 1rem;
+	text-align: center;
+	color: var(--white);
+}
+
+#projects .project .listp h3 {
+	color: var(--pmr);
+}
+
+#projects .project .hidez {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	margin: 0 5px;
+	margin-bottom: 0;
+}
+
+#projects .project .li {
+	/* background-color: #21d833; */
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	/* 225/230 */
+	gap: 2rem;
+	padding-top: 2rem;
+	border-radius: 0 50px 0 0;
+}
+
+#projects .project .listp {
+	border-radius: 5px;
+}
+
+#projects .project .li,
+#projects .project .listp {
+	background-color: var(--white);
+	padding: 20px;
+	border-radius: 7px;
+	box-shadow: 0 2px 0 2px rgba(0, 0, 0, 0.1);
+}
+
+#projects .project .listp .content {
+	margin: 0;
+}
+
+#projects .project .listp .content .desc {
+	text-align: justify;
+}
+
+.pdecs {
+	text-align: center;
+	margin: 15px 0 10px;
+}
+
+.pdecs span {
+	font-weight: bold;
+}
+
+/* CONTACT Section */
+#contact .medcont {
+	display: grid;
+	grid-template-columns: 35px auto;
+	grid-template-rows: 40px 40px 40px 40px;
+	color: var(--pmr);
+	padding: 0 5px;
+	align-items: center;
+}
+
+/* LINK DIV */
+.links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.links ul {
+	display: flex;
+	flex-wrap: wrap;
+	border: 2px solid var(--pmr);
+	margin: 20px auto;
+}
+
+#work .links ul,
+#contact .links ul {
+	margin-top: 0;
+}
+
+.links li {
+	margin: 5px 10px;
+}
+
+.links a {
+	font-size: 0.9rem;
+	color: var(--pmr);
+}
+
+.links svg {
+	width: 0.9rem;
+	height: 0.9rem;
+	align-self: center;
+}
+
+/* FOOTER Section */
+footer {
+	background-color: var(--pmr);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	border-radius: 0 6vw 0 6vw;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+	margin-top: 40px;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+	p,
+	nav a,
+	#about .sdee p,
+	#work p,
+	#contact p,
+	#testi p,
+	#blog p,
+	footer p,
+	footer a {
+		font-size: 1rem;
+	}
+
+	a {
+		font-size: 1rem;
+	}
+
+	main {
+		padding: 0 5%;
+	}
+
+	header {
+		border-radius: 0 0 10vw 10vw;
+	}
+
+	section {
+		border-radius: 7px 100px 7px 7px;
+	}
+
+	/* Tablet About */
+	#about h2 {
+		text-align: center;
+		margin: 0;
+	}
+
+	#about .abtcont {
+		grid-template-columns: 100%;
+		justify-items: center;
+	}
+
+	#about img {
+		width: 150px;
+		height: 170px;
+		margin: 0.5rem 0;
+	}
+
+	#about .sdee {
+		margin: 0.8rem 0.8rem 0;
+		padding: 20px;
+	}
+
+	.links ul {
+		margin: 15px auto 20px;
+	}
+
+	.links li {
+		margin: 2px 6px;
+	}
+
+	.links a {
+		font-size: 0.8rem;
+	}
+
+	.links svg {
+		height: 0.8rem;
+	}
+}
+
+@media (max-width: 480px) {
+	p,
+	a,
+	nav a,
+	#about .sdee p,
+	#work p,
+	#contact p,
+	#testi p,
+	#blog p,
+	footer p,
+	footer a {
+		font-size: 0.85rem;
+	}
+
+	section {
+		padding: 15px auto 0;
+		border-radius: 7px 70px 7px 7px;
+	}
+
+	/* Mobile Header */
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 8px 15px;
+		border-radius: 0 0 3px 3px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	}
+
+	header .logo {
+		height: 2rem;
+	}
+
+	header .tagline {
+		display: none;
+	}
+
+	header svg {
+		display: flex;
+	}
+
+	/* Mobile About */
+
+	#about img {
+		height: 170px;
+		margin: 0.5rem 0;
+	}
+
+	#about .sdee {
+		margin: 0.8rem 0.8rem 0;
+		padding: 0;
+	}
+
+	/* Mobile Project */
+
+	#projects .project .hidez {
+		margin: 0;
+	}
+
+	#projects .project .li {
+		padding: 2px;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	.links ul {
+		margin: 5px auto 20px;
+	}
+
+	.links li {
+		margin: 1px 2px;
+	}
+
+	.links a {
+		font-size: 0.7rem;
+	}
+
+	.links svg {
+		height: 0.7rem;
+	}
+}
